@@ -43,8 +43,11 @@
             <h1>Ristorante con Fusion</h1>
             <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
           </div>
-          <div class="col-12 col-sm-6 align-self-center">
+          <div class="d-flex col-12 col-sm-3 align-self-center justify-content-center">
             <img src="img/logo.png" class="img-fluid">
+          </div>
+          <div class="d-flex col-12 col-sm-3 align-self-center justify-content-center">
+            <a class="btn btn-sm btn-warning" href="#reserve-table-card">Reserve a Table</a>
           </div>
         </div>
       </div>
@@ -112,61 +115,67 @@
       </div>
 
       <div class="row row-content justify-content-center">
-        <div class="col-10 col-sm-8" style="border: 1px lightgrey solid; border-radius: 5px; padding: 0">
-          <h2 class="container" style="background-color: #eac323; color: white">Reserve a Table</h2>
-          <form class="container">
-            <div class="form-group row">
-              <div class="col-12 col-sm-5"><p>Number of Guests</p></div>
-              <div class="col-12 col-sm-7 row" style="justify-content: space-evenly">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                  <label class="form-check-label" for="exampleRadios1">
-                    1
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                  <label class="form-check-label" for="exampleRadios1">
-                    2
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                  <label class="form-check-label" for="exampleRadios1">
-                    3
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                  <label class="form-check-label" for="exampleRadios1">
-                    4
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                  <label class="form-check-label" for="exampleRadios1">
-                    5
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                  <label class="form-check-label" for="exampleRadios2">
-                    6
-                  </label>
-                </div>
-              </div>
+        <div class="col-12 col-sm-8">
+          <div class="card" id="reserve-table-card">
+            <div class="card-header" style="background-color: #ffc107">
+              <h2 style="color: white">Reserve a Table</h2>
             </div>
-            <div class="form-group row">
-              <div class="col-12 col-sm-4"><p>Date and Time</p></div>
-              <div class="col-12 col-sm-4">
-                <input type="text" class="form-control" id="date-field" name="datetime" placeholder="Date">
-              </div>
-              <div class="col-12 col-sm-4">
-                <input type="text" class="form-control" id="time-field" name="datetime" placeholder="Time">
-              </div>
+            <div class="card-body">
+              <form>
+                <div class="form-group row">
+                  <div class="col-12 col-sm-5"><p>Number of Guests</p></div>
+                  <div class="col-12 col-sm-7 row" style="justify-content: space-evenly">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                      <label class="form-check-label" for="exampleRadios1">
+                        1
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                      <label class="form-check-label" for="exampleRadios2">
+                        2
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                      <label class="form-check-label" for="exampleRadios3">
+                        3
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                      <label class="form-check-label" for="exampleRadios4">
+                        4
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5">
+                      <label class="form-check-label" for="exampleRadios5">
+                        5
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios6" value="option6">
+                      <label class="form-check-label" for="exampleRadios6">
+                        6
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-12 col-sm-4"><p>Date and Time</p></div>
+                  <div class="col-12 col-sm-4">
+                    <input type="text" class="form-control" id="date-field" name="datetime" placeholder="Date">
+                  </div>
+                  <div class="col-12 col-sm-4">
+                    <input type="text" class="form-control" id="time-field" name="datetime" placeholder="Time">
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Reserve</button>
+              </form>
             </div>
-            <button type="submit" class="btn btn-primary">Reserve</button>
-          </form>
+          </div>
         </div>
       </div>
     </div>
