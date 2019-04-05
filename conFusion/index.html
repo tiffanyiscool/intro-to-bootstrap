@@ -217,17 +217,25 @@
                 </div>
                 <!-- buttons at bottom of carousel -->
                 <ol class="carousel-indicators">
-                    <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#mycarousel" data-slide-to="1"></li>
-                    <li data-target="#mycarousel" data-slide-to="2"></li>
+                  <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#mycarousel" data-slide-to="1"></li>
+                  <li data-target="#mycarousel" data-slide-to="2"></li>
                 </ol>
                 <!-- nav arrows for carousel -->
                 <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
+                  <span class="carousel-control-prev-icon"></span>
                 </a>
                 <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
+                  <span class="carousel-control-next-icon"></span>
                 </a>
+              </div>
+              <div class="btn-group" id="carouselButton">
+                  <button class="btn btn-danger btn-sm" id="carousel-pause">
+                    <span class="fa fa-pause"></span>
+                  </button>
+                  <button class="btn btn-danger btn-sm" id="carousel-play">
+                    <span class="fa fa-play"></span>
+                  </button>
               </div>
           </div>
         </div>
@@ -342,6 +350,17 @@
     <script>
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#mycarousel").carousel( { interval: 2000 } );
+            $("#carousel-pause").click(function(){
+                $("#mycarousel").carousel('pause');
+            });
+            $("#carousel-play").click(function(){
+                $("#mycarousel").carousel('cycle');
+            });
         });
     </script>
   </body>
