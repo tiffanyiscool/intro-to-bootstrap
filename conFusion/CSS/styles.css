@@ -59,6 +59,7 @@ height: 300px;
   left: 0;
   min-height: 300px;
 }
+<<<<<<< HEAD
 
 #carouselButton {
   right:0px;
@@ -81,3 +82,5 @@ height: 300px;
   margin-right: 30px;
   transform: translateY(-50%);
   }
+=======
+>>>>>>> f13b13d196a0a8af653bf5a15a970d69843674cf
